@@ -240,6 +240,7 @@ h1 span {
 
 .main_cards {
 	display: flex;
+	height: 464px;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
@@ -248,7 +249,7 @@ h1 span {
 	position: relative;
 	background-image: url(../assets/image/main/Ellipse-Rose.svg);
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 108% 108%;
 	background-position: center;
 }
 
