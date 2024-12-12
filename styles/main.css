@@ -101,7 +101,7 @@ body {
 	background: #fff url('../assets/image/Ellipse-bg.png');
 	background-repeat: no-repeat;
 	background-size: 1440px 1682px;
-	background-position: center 7.1%;
+	background-position: center 8.4%;
 	overflow-x: hidden;
 	margin: 0 auto;
 	-webkit-box-sizing: border-box;
@@ -401,6 +401,7 @@ header {
 	background: #693bc4;
 	color: #fff;
 	display: none;
+	margin-right: 6px;
 }
 
 .top_buttons .secondary {
@@ -520,6 +521,18 @@ header {
 	.top_buttons {
 		display: none;
 	}
+	.header_about {
+		width: 92%;
+		padding: 0;
+		background: transparent;
+	}
+
+	.header_reviews {
+		/* width: 95.5%; */
+		width: 92%;
+		padding: 0;
+		background: transparent;
+	}
 
 	.hide_header {
 		display: flex;
@@ -538,6 +551,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow: hidden;
 }
 
 .users_info {
@@ -741,14 +755,6 @@ h1 span {
 	margin-top: 34px;
 }
 
-@keyframes slider {
-	0% {
-		transform: translateZ(0);
-	}
-	100% {
-		transform: translate3d(-245%, 0, 0);
-	}
-}
 .main_footer p {
 	font-size: 20px;
 	font-weight: 400;
@@ -783,9 +789,6 @@ h1 span {
 @media (max-width: 992px) {
 	.main_title {
 		width: 72.47%;
-	}
-	.cards_wrap {
-		animation: slider 5s linear infinite;
 	}
 }
 
@@ -827,6 +830,8 @@ h1 span {
 		justify-content: flex-start;
 		overflow-x: scroll;
 		scrollbar-width: none;
+		overflow: hidden;
+		width: 140%;
 		&::-webkit-scrollbar {
 			display: none;
 		}
@@ -893,6 +898,18 @@ h1 span {
 	.main_footer p {
 		font-size: 16px;
 		line-height: 18px;
+	}
+	.cards_wrap {
+		animation: marquee 10s linear infinite;
+	}
+	@keyframes marquee {
+		0% {
+			transform: translateX(50%);
+		}
+
+		100% {
+			transform: translateX(-100%);
+		}
 	}
 }
 
@@ -978,7 +995,7 @@ h1 span {
 	padding-top: 204px;
 	padding-bottom: 68px;
 	position: relative;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 .about_title {
@@ -1070,7 +1087,7 @@ h1 span {
 	-webkit-animation: about 2s linear both;
 	animation: about 2s linear both;
 	animation-timeline: view(block);
-	animation-range: entry 44vh cover 50vh;
+	animation-range: entry 24vh cover 30vh;
 	view-timeline-inset: 40%;
 }
 
@@ -1292,7 +1309,7 @@ h1 span {
 		padding: 24px 0 0;
 	}
 	.about_items {
-		width: 71.6%;
+		width: 87.6%;
 	}
 }
 @media (max-width: 576px) {
@@ -1307,10 +1324,10 @@ h1 span {
 	.mask_wrap {
 		margin-top: 32px;
 		padding: 24px 0 0;
-		width: 1500px;
+		/* width: 1500px; */
 	}
 	.about_items {
-		width: 71.6%;
+		width: 92.6%;
 	}
 }
 

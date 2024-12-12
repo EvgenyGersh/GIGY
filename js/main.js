@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		let possibleSection = document.querySelector('.header_possible')
 		let reviewsSection = document.querySelector('.reviews_header')
 		const header = document.querySelector('header')
-
+		const mobileHeader = document.querySelector('.hide_header')
 		function changeHeaderColor() {
 			const scrollTop = window.pageYOffset || document.documentElement.scrollTop
 			const possibleSectionOffset = possibleSection.offsetTop
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (reviewsTop < triggerBottom) {
 				setTimeout(() => {
 					reviewsFooter.classList.add('reviews_footer_active')
-				}, 1500)
+				}, 2000)
 			} else {
 				reviewsFooter.classList.remove('reviews_footer_active')
 			}
