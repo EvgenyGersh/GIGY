@@ -7,96 +7,215 @@
 		<link rel="stylesheet" href="./styles/utils/normalize.css" />
 		<link rel="stylesheet" href="./styles/utils/reset.css" />
 		<link rel="stylesheet" href="./styles/main.css" />
-		
 	</head>
 	<body>
+		<section class="mobile_menu">
+			<div class="mobile_menu_wrap">
+				<div class="mobile_header">
+					<div class="menu_toggle_wrap">
+						<div class="toggle_logo">
+							<a href="#main"
+								><img src="./assets/icons/mob-logo.svg" alt="gigy"
+							/></a>
+						</div>
+						<div class="toggle_menu close_menu">
+							<img src="./assets/icons/mob-close.svg" alt="" /><span>Меню</span>
+						</div>
+					</div>
+				</div>
+				<div class="mobile_links">
+					<nav class="mobile_nav">
+						<div class="link_block">
+							<a href="#main" class="image_link">
+								<img src="./assets/image/mobile-menu/mob-1.png" alt="головна" />
+							</a>
+							<a href="#main" class="mobile_link"
+								><img src="" alt="" /> Головна<span
+									>Керуйте записами легко – довірте це Gigy.</span
+								></a
+							>
+						</div>
+						<div class="link_block">
+							<a href="#possibilities" class="image_link">
+								<img src="./assets/image/mobile-menu/mob-2.png" alt="" />
+							</a>
+							<a href="#possibilities" class="mobile_link"
+								>Можливості
+								<span
+									>Дізнайся, що може Gigy-бот і як він зробить твою роботу
+									зручнішою.
+								</span></a
+							>
+						</div>
+						<div class="link_block">
+							<a href="#services" class="image_link">
+								<img src="./assets/image/mobile-menu/mob-3.png" alt="" />
+							</a>
+							<a href="#services" class="mobile_link"
+								>Про сервіс<span
+									>Ознайомимося, як працює Gigy-бот на конкретному
+									прикладі.</span
+								>
+							</a>
+						</div>
+						<div class="link_block">
+							<a href="#advantages" class="image_link">
+								<img src="./assets/image/mobile-menu/mob-4.png" alt="" />
+							</a>
+							<a href="#advantages" class="mobile_link"
+								>Порівняння<span
+									>Порівняй переваги Gigy-бота з іншими аналогами.</span
+								></a
+							>
+						</div>
+						<div class="link_block">
+							<a href="#price" class="image_link">
+								<img src="./assets/image/mobile-menu/mob-5.png" alt="" />
+							</a>
+							<a href="#price" class="mobile_link"
+								>Тарифи<span
+									>Обери тариф, який ідеально підходить саме тобі.</span
+								>
+							</a>
+						</div>
+					</nav>
+					<div class="mobile_buttons">
+						<button class="btn mobile_btn sign_btn">Увійти</button>
+						<button class="btn mobile_btn try_btn">Спробувати зараз</button>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- Heder -->
-		 <header>
-			<a class="logo" href="./"
+		<header>
+			<div class="mobile_header hide_header">
+				<div class="menu_toggle_wrap">
+					<div class="toggle_logo">
+						<a href="#main"
+							><img src="./assets/icons/mob-logo.svg" alt="gigy"
+						/></a>
+					</div>
+					<div class="toggle_menu open_menu">
+						<img src="./assets/icons/mob-gamburger.svg" alt="" class="" /><span
+							>Меню</span
+						>
+					</div>
+				</div>
+			</div>
+			<a class="logo_top" href="#main"
 				><img src="./assets/icons/Logo-header.svg" alt="GIGY"
 			/></a>
-
+			<div class="small_logo"></div>
 			<nav class="header_nav">
 				<ul class="header_links">
 					<li class="header_link">
-						<a href="#sol" class="active" target="">Главная</a>
+						<a href="#main" target="">Головна</a>
 					</li>
 					<li class="header_link">
-						<a href="#int" target="">Кому подходит</a>
+						<a href="#possibilities" target="">Можливості</a>
 					</li>
 					<li class="header_link">
-						<a href="/" target="">Что даёт</a>
+						<a href="#services" target="">Про сервіс</a>
 					</li>
 					<li class="header_link">
-						<a href="/" target="">Тарифы</a>
+						<a href="#advantages" target="">Порівняння</a>
 					</li>
 					<li class="header_link">
-						<a href="/" target="">Сравнения</a>
+						<a href="#price" target="">Тарифи</a>
 					</li>
 				</ul>
 			</nav>
-			<button class="btn header_btn">Начать использовать</button>
+			<div class="top_buttons">
+				<button class="btn header_btn primary">Спробувати зараз</button>
+				<button class="btn header_btn secondary">
+					<span>Увійти</span
+					><img src="./assets/icons/header-arrow.svg" alt="Увійти" />
+				</button>
+			</div>
 		</header>
 		<!-- Main -->
-		<main>
+		<main id="main">
 			<div class="users_info">
 				<div class="users_avatar">
 					<img src="./assets/image/main/Users.png" alt="users avatar" />
 				</div>
-				<div class="users_text"><span>Gigy123</span> Користується вже <span>500</span> майстрів 
+				<div class="users_text">
+					<span>Gigy123</span> Користується вже <span>500</span> майстрів
 				</div>
 			</div>
-		<div class="main_title">
-			<h1>Gigy <span>- твій онлайн помічник для запису клієнтів </span></h1>
-			
-		</div>
+			<div class="main_title">
+				<h1>Gigy <span>- твій онлайн помічник для запису клієнтів </span></h1>
+			</div>
 			<div class="buttons">
 				<button class="btn main_btn">Спробувати безкоштовно</button>
-				
 			</div>
 			<div class="main_cards">
-				<div class="cards_wrap">
-				<div class=" main_card card_center card_left_primary"><img src="./assets/image/main/center-left.png" alt="">
-				</div>
-				<div class="main_card cards_column card_left_secondary">
-					<div class="card_top ">
-						<img src="./assets/image/main/column-left-top.png" alt="">
-						<img src="./assets/image/main/after-left-top.png" class="left_top" alt="">
+				<div class="card_blur"></div>
+				<div class="card_block">
+					<div class="cards_wrap">
+						<div class="main_card card_center card_left_primary">
+							<img src="./assets/image/main/center-left.png" alt="" />
+						</div>
+						<div class="main_card cards_column card_left_secondary">
+							<div class="card_top">
+								<img src="./assets/image/main/column-left-top.png" alt="" />
+								<img
+									src="./assets/image/main/after-left-top.png"
+									class="left_top"
+									alt=""
+								/>
+							</div>
+							<div class="card_bottom">
+								<img src="./assets/image/main/column-left-bottom.png" alt="" />
+								<img
+									src="./assets/image/main/after-left-bottom.png"
+									class="left_bottom"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="main_card card_center card_phone">
+							<img src="./assets/image/main/center.png" alt="" />
+						</div>
+						<div class="main_card cards_column card_right_secondary">
+							<div class="card_top">
+								<img src="./assets/image/main/column-right-top.png" alt="" />
+								<img
+									src="./assets/image/main/after-right-top.png"
+									class="right_top"
+									alt=""
+								/>
+							</div>
+							<div class="card_bottom">
+								<img src="./assets/image/main/column-right-bottom.png" alt="" />
+								<img
+									src="./assets/image/main/after-right-bottom.png"
+									class="right_bottom"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="main_card card_center card_right_primary">
+							<img src="./assets/image/main/center-right.png" alt="" />
+						</div>
 					</div>
-					<div class="card_bottom">
-						<img src="./assets/image/main/column-left-bottom.png" alt="">
-						<img src="./assets/image/main/after-left-bottom.png" class="left_bottom" alt="">
-					</div>
-				</div>
-				<div class="main_card card_center card_phone"><img src="./assets/image/main/center.png" alt="">
-				</div>
-				<div class="main_card cards_column card_right_secondary">
-					<div class="card_top ">
-						<img src="./assets/image/main/column-right-top.png" alt="">
-						<img src="./assets/image/main/after-right-top.png" class="right_top" alt="">
-					</div>
-					<div class="card_bottom">
-						<img src="./assets/image/main/column-right-bottom.png" alt="">
-						<img src="./assets/image/main/after-right-bottom.png" class="right_bottom" alt="">
-					</div>
-				</div>
-				<div class="main_card card_center card_right_primary"><img src="./assets/image/main/center-right.png" alt="">
 				</div>
 			</div>
-		</div>
-		<div class="main_footer">
-			<p>Сервіс який закохує клієнтів до ваших послуг. Від першого погляду до візиту лише 3 кроки, спробуй 1 місяць безкоштовно.</p></div>
-			
-				
-			
+			<div class="main_footer">
+				<p>
+					Сервіс який закохує клієнтів до ваших послуг. Від першого погляду до
+					візиту лише 3 кроки, спробуй 1 місяць безкоштовно.
+				</p>
+			</div>
 		</main>
 		<!-- About -->
-		<section class="about">
+		<section id="possibilities" class="about header_possible">
 			<div class="section_title about_title">
 				<h2>Gigy-бот<span> саме для тебе!</span></h2>
 				<div class="section_description">
 					<p>
-						Наш сервіс обʼєдную beauty-майстрів зі всієї України
+						Наш сервіс обʼєдную beauty-майстрів зі
+						<span>всієї України</span>
 					</p>
 				</div>
 			</div>
@@ -104,111 +223,87 @@
 				<div class="about_items">
 					<div class="about_item text_item">Nail-сервіс</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Тату
-					</div>
+					<div class="about_item text_item">Тату</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Макіяж
-					</div>
+					<div class="about_item text_item">Макіяж</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Лазерна епіляція
-					</div>
+					<div class="about_item text_item">Лазерна епіляція</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Косметологія 
-					</div>
+					<div class="about_item text_item">Косметологія</div>
 					<div class="about_item about_bg"></div>
 					<div class="about_item text_item">Перманент</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Корекція фігури 
-					</div>
+					<div class="about_item text_item">Корекція фігури</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Шугарінг 
-					</div>
+					<div class="about_item text_item">Шугарінг</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Масаж
-					</div>
+					<div class="about_item text_item">Масаж</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Зачіски
-					</div>
+					<div class="about_item text_item">Зачіски</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Парикмахерські послуги
-					</div>
+					<div class="about_item text_item">Парикмахерські послуги</div>
 					<div class="about_item about_bg"></div>
-					<div class="about_item text_item">
-						Вії 
-					</div>
+					<div class="about_item text_item">Вії</div>
 					<div class="about_item about_bg"></div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Gallery -->
-		<section class="gallery">
+		<section id="services" class="gallery">
 			<div class="section_title">
-				<h2>Можливості Gigy</span></h2>
+				<h2>Можливості Gigy</h2>
 				<div class="section_description">
 					<p>
-						Просте бронювання для клієнтів та зручний розклад для майстрів у Telegram
+						Просте бронювання для клієнтів та зручний розклад для майстрів у
+						<span>Telegram</span>
 					</p>
 				</div>
 			</div>
 			<div class="gallery_items">
 				<div class="item_wrap telegram_item">
-					<h5>GIGY Телеграм — зручний <br />вибір для вас і ваших клієнтів</h5>
-					<p class="item_text">
-						Це те, що використовують ваші клієнти <br />і ви. Немає потреби
-						нічого завантажувати!
-					</p>
+					<h5>GIGY Телеграм — зручний вибір для вас і ваших клієнтів</h5>
+					<p class="item_text">Платформа №1 серед користувачів в Україні</p>
 				</div>
 				<div class="item_wrap base_item small">
-					<h5>База клиентов в одном месте</h5>
+					<h5>База клієнтів в одному місці</h5>
 					<p class="item_text small_text rose_text">
-						Мобильное приложение для удобного и быстрого записей клиентов в
-						сфере красоты
+						Більше не треба шукати клієнтів в інших месенджерах та завантажувати
+						інші додатки, тепер всі твої клієнти в Telegram
 					</p>
 				</div>
 				<div class="item_wrap news_item small">
-					<h5>Рассылка </h5>
+					<h5>Розсилка</h5>
 					<p class="item_text small_text rose_text">
-						Мобильное приложение для удобного и быстрого записей клиентов в
-						сфере красоты
+						Ми попіклувались про те, щоб нагадати вашім клієнтам про запис та
+						привітати із святами!
 					</p>
 				</div>
 				<div class="item_wrap services_item">
-					<h5>Сервiс</h5>
+					<h5>Запис за 3 кліки</h5>
 					<p class="item_text">
-						Ваш сервіс стає ще зручнішим: клієнти можуть забронювати запис у
-						кілька кліків, не відволікаючись на тисячі повідомлень
+						Більше ніяких очікувань та спаму в повідомленнях, тепер запис
+						клієнтів став ще зручніше для майстрів та приємніше для клієнтів
 					</p>
 				</div>
 				<div class="item_wrap client_item">
-					<h5>
-						Свобода для вас<br />
-						і ваших клієнтів
-					</h5>
+					<h5>Персональний графік</h5>
 					<p class="item_text">
-						Клієнти можуть записуватися в будь-<br />який час, а ви отримуєте
-						більше<br />
-						можливостей для роботи.
+						Більше ніяких шаблонів, бо графік індивідуально підлаштовується
+						під вас
 					</p>
 				</div>
 				<div class="item_wrap space_item small">
 					<h5>Ваш простір</h5>
 					<p class="item_text small_text">
-						Ваша особиста сторінка для зручного управління записами та
-						спілкування з клієнтами!
+						Зручний та зрозумілий простір для керування записами та
+						відстежування аналітики
 					</p>
 				</div>
 			</div>
-			<button class="btn gallery_btn">Спробувати безкоштовно на 1 місяць</button>
+			<button class="btn gallery_btn">
+				Спробувати безкоштовно на 1 місяць
+			</button>
 		</section>
 
 		<!-- ------- Services -------  -->
@@ -216,15 +311,8 @@
 		<section class="services">
 			<div class="section_title services_title">
 				<h2>Сервіс<span> про який мріє ваш клієнт</span></h2>
-				<!-- <div class="section_description">
-					<p>
-						Reworkd makes it easier than ever to extract web data at scale.
-						Spend less time worrying about data infrastructure – and more time
-						running your business.
-					</p>
-				</div> -->
 			</div>
-			<div class="services_contant">
+			<div class="services_content">
 				<div class="services_items">
 					<div class="services_descriptions">
 						<div class="service_description name_1">
@@ -232,7 +320,8 @@
 							<div class="service_text">
 								<h5>Обрати послугу</h5>
 								<p>
-									Ваш клієнт може одразу обрати декілька послуг та збільшити середній чек
+									Ваш клієнт може одразу обрати декілька послуг та збільшити
+									середній чек
 								</p>
 							</div>
 							<button class="btn service_btn serv_1">
@@ -244,7 +333,9 @@
 							<div class="service_text">
 								<h5>Обрати день і час запису</h5>
 								<p>
-									Що може бути краще, ніж мати свій власний графік. Ми потурбувалися про те, щоб ви не втрачали своїх клієнтів через довге очікування
+									Що може бути краще, ніж мати свій власний графік. Ми
+									потурбувалися про те, щоб ви не втрачали своїх клієнтів через
+									довге очікування
 								</p>
 							</div>
 							<button class="btn service_btn serv_2">
@@ -255,9 +346,7 @@
 							<div class="click_btn click_3">Крок 3</div>
 							<div class="service_text">
 								<h5>Успiх</h5>
-								<p>
-									Запис створений та вже повідомляє вас через GIGY-бот
-								</p>
+								<p>Запис створений та вже повідомляє вас через GIGY-бот</p>
 							</div>
 							<button class="btn service_btn serv_3">
 								Спробувати на 1 місяць
@@ -267,17 +356,71 @@
 					<div class="services_images">
 						<div class="hidden_wrap">
 							<div class="services_column">
-							<div class="service_image service_image_active">
-								<img src="./assets/image/services/service-1.png" alt="" />
-							</div>
-							<div class="service_image ">
-								<img src="./assets/image/services/service-2.png" alt="" />
-							</div>
-							<div class="service_image ">
-								<img src="./assets/image/services/service-3.png" alt="" />
+								<div class="service_image">
+									<img src="./assets/image/services/service-1.png" alt="" />
+								</div>
+								<div class="service_image">
+									<img src="./assets/image/services/service-2.png" alt="" />
+								</div>
+								<div class="service_image">
+									<img src="./assets/image/services/service-3.png" alt="" />
+								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="services_content_mobile">
+				<div class="button_sticky">
+					<div class="services_mobile_buttons">
+						<button class="btn service_btn serv_1">
+							Спробувати на 1 місяць
+						</button>
+						<button class="btn service_btn serv_2">
+							Спробувати на 1 місяць
+						</button>
+						<button class="btn service_btn serv_3">
+							Спробувати на 1 місяць
+						</button>
+					</div>
+				</div>
+				<div class="services_descriptions_mobile">
+					<div class="service_description_mobile name_1">
+						<div class="service_image_mobile">
+							<img src="./assets/image/services/service-1.png" alt="" />
 						</div>
+
+						<div class="click_btn">Крок 1</div>
+						<div class="service_text">
+							<h5>Обрати послугу</h5>
+							<p>
+								Ваш клієнт може одразу обрати декілька послуг та збільшити
+								середній чек
+							</p>
+						</div>
+					</div>
+					<div class="service_description_mobile name_2">
+						<div class="service_image_mobile">
+							<img src="./assets/image/services/service-2.png" alt="" />
+						</div>
+						<div class="click_btn click_2">Крок 2</div>
+						<div class="service_text">
+							<h5>Обрати день і час запису</h5>
+							<p>
+								Що може бути краще, ніж мати свій власний графік. Ми
+								потурбувалися про те, щоб ви не втрачали своїх клієнтів через
+								довге очікування
+							</p>
+						</div>
+					</div>
+					<div class="service_description_mobile name_3">
+						<div class="service_image_mobile">
+							<img src="./assets/image/services/service-3.png" alt="" />
+						</div>
+						<div class="click_btn click_3">Крок 3</div>
+						<div class="service_text">
+							<h5>Успiх</h5>
+							<p>Запис створений та вже повідомляє вас через GIGY-бот</p>
 						</div>
 					</div>
 				</div>
@@ -285,33 +428,33 @@
 		</section>
 
 		<!-- ------- Reviews -------  -->
-		<section class="reviews">
+		<section class="reviews reviews_header">
 			<div class="section_title">
-				<h2>Futuristic features.<span> About time.</span></h2>
+				<h2>Відгуки, <span>що говорять самі за себе</span></h2>
 				<div class="section_description">
 					<p>
-						Reworkd makes it easier than ever to extract web data at scale.
-						Spend less time worrying about data infrastructure – and more time
-						running your business.
+						Дізнайтеся, як GIGY допомагає б'юті-майстрам організувати запис
+						і полегшити роботу з клієнтами.
 					</p>
 				</div>
 			</div>
 			<div class="tabs_switch">
-
-				<div class="switch_btn ">
+				<div class="switch_btn">
 					<div class="label">
-						<p class='butt_prg'>Мастера</p> <span class='butt_span'>О чем говорят</span>
+						<p class="butt_prg reviews_switch">Майстри</p>
+						<span class="butt_span">Про що говорять</span>
 					</div>
 				</div>
-				<div class="switch_btn ">
+				<div class="switch_btn">
 					<div class="label">
-						<p class='butt_prg'>Клиенты</p><span class='butt_span'>О чем говорят</span>
+						<p class="butt_prg reviews_switch">Клієнти</p>
+						<span class="butt_span">Про що говорять</span>
 					</div>
 				</div>
 				<div class="label_btn label_anim"></div>
 			</div>
 			<div class="reviews_tabs">
-				<div class="master_reviews reviews_content">
+				<div class="reviews_content master_reviews">
 					<div class="reviews_column column1">
 						<div class="reviews_item">
 							<div class="user_wrap">
@@ -578,7 +721,7 @@
 					</div>
 				</div>
 
-				 <div class="client_reviews reviews_content">
+				<!-- <div class="reviews_content client_reviews">
 					<div class="reviews_column column1">
 						<div class="reviews_item">
 							<div class="user_wrap">
@@ -843,9 +986,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
-			<div class="reviews_footer">
+			<div class="reviews_footer reviews_footer_active">
 				<p>
 					Вже <span>400 майстрів</span> обрали <span>GIGY</span>, щоб підвищити
 					свій сервіс і спростити управління записами.
@@ -854,44 +997,45 @@
 		</section>
 
 		<!-- ------- Advantages -------  -->
-		<section class="advantages">
+		<section id="advantages" class="advantages">
 			<div class="section_title white_title">
 				<h2>Порівняння</h2>
 				<div class="section_description">
-					<p>
-						Зробити правильний вибір 💙💛
-					</p>
+					<p>Зробити правильний вибір 💙💛</p>
 				</div>
 			</div>
 			<div class="advantages_items">
 				<div class="advantages_item primary_item">
 					<h3>Gigy-bot</h3>
-					<button class="advantages_btn" >Спробувати</button>
+					<button class="advantages_btn">Спробувати</button>
 					<div class="advantages_text">
 						<div class="advantages_line">
 							<div class="line_img">
-								<img src="./assets/icons/advantages-arrow.svg" alt="arrow">
+								<img src="./assets/icons/advantages-arrow.svg" alt="arrow" />
 							</div>
 							<p>Не потребує сайту та додаткових платформ</p>
 						</div>
 						<div class="advantages_line">
 							<div class="line_img">
-								<img src="./assets/icons/advantages-arrow.svg" alt="arrow">
+								<img src="./assets/icons/advantages-arrow.svg" alt="arrow" />
 							</div>
-							<p>Ціна Вiд 7$ </p>
+							<p>Ціна Вiд 7$</p>
 						</div>
 						<div class="advantages_line">
 							<div class="line_img">
-								<img src="./assets/icons/advantages-arrow.svg" alt="arrow">
+								<img src="./assets/icons/advantages-arrow.svg" alt="arrow" />
 							</div>
-							<p>З нами залишаються 98% <br>користувачів</p>
+							<p>З нами залишаються 98% <br />користувачів</p>
 						</div>
 						<div class="advantages_line">
 							<div class="line_img">
-								<img src="./assets/icons/advantages-arrow.svg" alt="arrow">
+								<img src="./assets/icons/advantages-arrow.svg" alt="arrow" />
 							</div>
 							<p>Створено в Україні</p>
 						</div>
+					</div>
+					<div class="small_ellipse">
+						<img src="./assets/image/Ellipse-adv-smoll.png" alt="." />
 					</div>
 				</div>
 				<div class="advantages_item secondary_item">
@@ -900,45 +1044,65 @@
 					<div class="advantages_text">
 						<div class="advantages_line">
 							<div class="line_img">
-								<img src="./assets/icons/advantages-plus.svg" alt="no">
+								<img src="./assets/icons/advantages-plus.svg" alt="no" />
 							</div>
 							<p>Менше ніж 48% користувачів через місяць</p>
 						</div>
 						<div class="advantages_line">
 							<div class="line_img">
-								<img src="./assets/icons/advantages-plus.svg" alt="no">
+								<img src="./assets/icons/advantages-plus.svg" alt="no" />
 							</div>
-							<p>Ціна Вiд 15$ </p>
+							<p>Ціна Вiд 15$</p>
 						</div>
 						<div class="advantages_line">
 							<div class="line_img">
-								<img src="./assets/icons/advantages-plus.svg" alt="no">
+								<img src="./assets/icons/advantages-plus.svg" alt="no" />
 							</div>
 							<p>Менше ніж 48% користувачів через місяць</p>
 						</div>
 						<div class="advantages_line">
 							<div class="line_img">
-								<img src="./assets/icons/advantages-plus.svg" alt="no">
+								<img src="./assets/icons/advantages-plus.svg" alt="no" />
 							</div>
 							<p>Створено за кордоном</p>
 						</div>
 					</div>
+					<div class="small_ellipse">
+						<img src="./assets/image/Ellipse-adv-smoll.png" alt="." />
+					</div>
 				</div>
-				<div class="bg_ellipse"><img src="./assets/image/Ellipse-adv.png" alt="ellips"></div>
+				<div class="bg_ellipse">
+					<img src="./assets/image/Ellipse-adv.png" alt="ellips" />
+				</div>
 			</div>
 		</section>
 
 		<!-- ------- Price -------  -->
-		<section class="price">
+		<section id="price" class="price">
 			<div class="section_title white_title">
 				<h2>Обирайте свій план GIGY</h2>
 				<div class="section_description">
 					<p>
-						Reworkd makes it easier than ever to extract web data at scale. Spend less time worrying about data infrastructure – and more time running your business.
+						Ваш комфорт — у вашому тарифі. Знайдіть ідеальне рішення для
+						бізнесу.
 					</p>
 				</div>
 			</div>
-			<div class="tabs_switch price_switch"></div>
+			<div class="tabs_switch price_switch">
+				<div class="switch_btn">
+					<div class="label">
+						<p class="butt_prg">Тільки для тебе</p>
+						<span class="butt_span">Особисто ваш</span>
+					</div>
+				</div>
+				<div class="switch_btn">
+					<div class="label label_price">
+						<p class="butt_prg">Партнерський</p>
+						<span class="butt_span">Для вас з партнеромь</span>
+					</div>
+				</div>
+				<div class="label_btn label_anim price_label_btn"></div>
+			</div>
 			<div class="price_tabs">
 				<div class="price_tab price_1">
 					<div class="price_descriptions">
@@ -946,9 +1110,7 @@
 							<div class="price_icon">
 								<img src="./assets/image/price/Icon-price.png" alt="Icon" />
 							</div>
-							<div class="text">
-								Отримуєте доступ одразу після оплати
-							</div>
+							<div class="text">Отримуєте доступ одразу після оплати</div>
 						</div>
 						<div class="price_text">
 							<div class="price_icon">
@@ -968,12 +1130,11 @@
 						</div>
 					</div>
 					<div class="prise_cards">
-						<div class="prise_card">
+						<div class="prise_card price_left_card">
 							<div class="rating"></div>
 							<div class="cost_line">
 								<div class="currency"></div>
-								<div class="cost">
-									<span>Місяць</span></div>
+								<div class="cost">Місяць</div>
 								<div class="term">
 									<div class="economy"></div>
 									<div class="time">/free</div>
@@ -983,13 +1144,13 @@
 							<div class="card_term">Безкоштовно на 1 місяць</div>
 							<button class="cost_btn">Обрати цей тариф</button>
 						</div>
-						<div class="prise_card center_card">
+						<div class="prise_card price_center_card">
 							<div class="rating">Найпопулярнiший</div>
 							<div class="cost_line">
 								<div class="currency">грн</div>
 								<div class="cost">399</div>
 								<div class="term">
-									<div class="economy">450<span></span></div>
+									<div class="economy">450</div>
 									<div class="time">/мiсяць</div>
 								</div>
 							</div>
@@ -997,11 +1158,11 @@
 							<div class="card_term">399 грн кожен мiсяць</div>
 							<button class="cost_btn">Обрати цей тариф</button>
 						</div>
-						<div class="prise_card">
+						<div class="prise_card price_right_card">
 							<div class="rating"></div>
 							<div class="cost_line">
 								<div class="currency">грн</div>
-								<div class="cost">499<span></span></div>
+								<div class="cost">499</div>
 								<div class="term">
 									<div class="economy"></div>
 									<div class="time">/мiсяць</div>
@@ -1013,53 +1174,37 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="price_tab price_2">
-					<div class="price_descriptions">
-						<div class="price_text">
-							<div class="check_icon"><img src="" alt="" /></div>
-							<div class="text"></div>
-						</div>
-						<div class="price_text">
-							<div class="check_icon"><img src="" alt="" /></div>
-							<div class="text"></div>
-						</div>
-						<div class="price_text">
-							<div class="check_icon"><img src="" alt="" /></div>
-							<div class="text"></div>
-						</div>
-					</div>
-					<div class="prise_items"></div>
-				</div> -->
 			</div>
 		</section>
 		<!-- ------------ FAQ ----------  -->
-		 <section class="faq">
+		<section class="faq">
 			<div class="section_title faq_title">
 				<h2>Потрібна допомога?</h2>
 				<div class="section_description">
-					<p>
-						Наша служба турботи попіклується про тебе
-					</p>
+					<p>Наша служба турботи попіклується про тебе</p>
 				</div>
 			</div>
 			<div class="faq_image">
-				<div class="image_anim">
-					<img src="./assets/image/faq/People.png" alt="">
-				</div>
+				<div class="image_anim"></div>
 				<div class="main_image">
 					<div class="blur_wrap"></div>
 					<div class="main_img">
-					<img src="./assets/image/faq/phone-girl.png" alt="girl">
+						<img src="./assets/image/faq/phone-girl.png" alt="girl" />
 					</div>
-					<button class='btn faq_btn'><img src="./assets/image/faq/message.svg" alt=""><span>Зв'язатися з нами</span></button>
+					<button class="btn faq_btn">
+						<img src="./assets/image/faq/message.svg" alt="" /><span
+							>Зв'язатися з нами</span
+						>
+					</button>
 				</div>
-				
 			</div>
 			<div class="faq_items">
 				<div class="faq_item">
 					<div class="faq_question">
 						<p>Чи потрібно мені завантажувати додаток?</p>
-						<div class="icon"><img src="./assets/icons/faq-icons.svg" alt="arrow"></div>
+						<div class="icon">
+							<img src="./assets/icons/faq-icons.svg" alt="arrow" />
+						</div>
 					</div>
 					<div class="faq_answer">
 						<p>jjfkokjsdkjsd</p>
@@ -1068,7 +1213,9 @@
 				<div class="faq_item">
 					<div class="faq_question">
 						<p>Чи зможу я самостійно вносити записи окремих клієнтів??</p>
-						<div class="icon"><img src="./assets/icons/faq-icons.svg" alt="arrow"></div>
+						<div class="icon">
+							<img src="./assets/icons/faq-icons.svg" alt="arrow" />
+						</div>
 					</div>
 					<div class="faq_answer">
 						<p></p>
@@ -1077,7 +1224,9 @@
 				<div class="faq_item">
 					<div class="faq_question">
 						<p>Що мені потрібно для регістрації як майстру?</p>
-						<div class="icon"><img src="./assets/icons/faq-icons.svg" alt="arrow"></div>
+						<div class="icon">
+							<img src="./assets/icons/faq-icons.svg" alt="arrow" />
+						</div>
 					</div>
 					<div class="faq_answer">
 						<p></p>
@@ -1086,7 +1235,9 @@
 				<div class="faq_item">
 					<div class="faq_question">
 						<p>Що потрібно моїм клієнтам, щоб записатись до мене?</p>
-						<div class="icon"><img src="./assets/icons/faq-icons.svg" alt="arrow"></div>
+						<div class="icon">
+							<img src="./assets/icons/faq-icons.svg" alt="arrow" />
+						</div>
 					</div>
 					<div class="faq_answer">
 						<p></p>
@@ -1095,7 +1246,9 @@
 				<div class="faq_item">
 					<div class="faq_question">
 						<p>Як стати партнером Gigy?</p>
-						<div class="icon"><img src="./assets/icons/faq-icons.svg" alt="arrow"></div>
+						<div class="icon">
+							<img src="./assets/icons/faq-icons.svg" alt="arrow" />
+						</div>
 					</div>
 					<div class="faq_answer">
 						<p></p>
@@ -1104,7 +1257,9 @@
 				<div class="faq_item">
 					<div class="faq_question">
 						<p>Що потрібно моїм клієнтам, щоб записатись до мене?</p>
-						<div class="icon"><img src="./assets/icons/faq-icons.svg" alt="arrow"></div>
+						<div class="icon">
+							<img src="./assets/icons/faq-icons.svg" alt="arrow" />
+						</div>
 					</div>
 					<div class="faq_answer">
 						<p></p>
@@ -1113,7 +1268,9 @@
 				<div class="faq_item">
 					<div class="faq_question">
 						<p>Що мені потрібно для регістрації як майстру?</p>
-						<div class="icon"><img src="./assets/icons/faq-icons.svg" alt="arrow"></div>
+						<div class="icon">
+							<img src="./assets/icons/faq-icons.svg" alt="arrow" />
+						</div>
 					</div>
 					<div class="faq_answer">
 						<p></p>
@@ -1122,46 +1279,45 @@
 				<div class="faq_item">
 					<div class="faq_question">
 						<p>Що потрібно моїм клієнтам, щоб записатись до мене?</p>
-						<div class="icon"><img src="./assets/icons/faq-icons.svg" alt="arrow"></div>
+						<div class="icon">
+							<img src="./assets/icons/faq-icons.svg" alt="arrow" />
+						</div>
 					</div>
 					<div class="faq_answer">
 						<p></p>
 					</div>
 				</div>
 			</div>
-		 	<footer>
-			<nav class="footer_nav">
-				<a href="">© Все права защищены</a>
-				<a href="">Политика конфидециальности</a>
-				<a href="">Оферта</a>
-			</nav>
-			<div class="footer_logo">
-				<a href="./"><img src="./assets/image/footer-logo.svg" alt="GIGY" />
-					<span>Studio</span>
-				</a>
-			</div>
-			<div class="news_links">
-				<span>Стеж за нами у:</span>
-				<div class="instagram_link">
-					<a href="./"><img src="./assets/icons/Instagram-Icon.svg" alt="Instagram"></a>
+			<footer>
+				<nav class="footer_nav">
+					<a href="" class="copyrigt">© Усі права захищені</a>
+					<a href="">Політика конфіденційності</a>
+					<a href="">Оферта</a>
+				</nav>
+				<div class="footer_logo">
+					<a href="./"
+						><img src="./assets/image/footer-logo.svg" alt="GIGY" />
+						<span>Studio</span>
+					</a>
 				</div>
-				<div class="telegram_link">
-					<a href="./"><img src="./assets/icons/telegram-icon.svg" alt="telegram"></a>
+				<div class="news_links">
+					<span>Стеж за нами у:</span>
+					<div class="web_links">
+						<div class="instagram_link">
+							<a href="./"
+								><img src="./assets/icons/Instagram-Icon.svg" alt="Instagram"
+							/></a>
+						</div>
+						<div class="telegram_link">
+							<a href="./"
+								><img src="./assets/icons/telegram-icon.svg" alt="telegram"
+							/></a>
+						</div>
+					</div>
 				</div>
-			</div>
-			<!-- <div class="scroll_top">
-				<a href="./"
-					><img src="./assets/image/scroll-top.png" alt="scroll-top"
-				/></a>
-			</div> -->
 			</footer>
-		 </section>
-		
-
+		</section>
 
 		<script type="module" src="./js/main.js"></script>
-		
-
-		
 	</body>
 </html>
