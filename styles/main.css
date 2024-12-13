@@ -428,6 +428,7 @@ header {
 
 .header_about .top_buttons .primary {
 	display: flex;
+	justify-content: center;
 }
 .header_about {
 	background: #9c5dfebf;
@@ -904,7 +905,7 @@ h1 span {
 	}
 	@keyframes marquee {
 		0% {
-			transform: translateX(50%);
+			transform: translateX(0%);
 		}
 
 		100% {
