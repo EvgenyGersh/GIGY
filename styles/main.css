@@ -100,7 +100,7 @@ body {
 
 	background: #fff url('../assets/image/Ellipse-bg.png');
 	background-repeat: no-repeat;
-	background-size: 1440px 1682px;
+	background-size: auto;
 	background-position: center 8.4%;
 	overflow-x: hidden;
 	margin: 0 auto;
@@ -109,6 +109,32 @@ body {
 	scrollbar-width: none;
 	&::-webkit-scrollbar {
 		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	body {
+		background-position: center 5.4%;
+	}
+}
+@media (max-width: 1024px) {
+	body {
+		background-position: center 5%;
+	}
+}
+@media (max-width: 992px) {
+	body {
+		background-position: center 3%;
+	}
+}
+@media (max-width: 768px) {
+	body {
+		background-position: center 2%;
+	}
+}
+@media (max-width: 576px) {
+	body {
+		background-position: center 2.8%;
 	}
 }
 /* ---------- MOBILE-MENU ----------- */
@@ -712,7 +738,7 @@ h1 span {
 }
 
 .card_phone {
-	max-width: 244px;
+	max-width: 222px;
 }
 
 .card_right_secondary {
@@ -1039,6 +1065,8 @@ h1 span {
 	padding-top: 204px;
 	padding-bottom: 68px;
 	position: relative;
+	background: rgba(245, 243, 254, 1);
+
 	/* overflow-x: hidden; */
 }
 
@@ -3462,7 +3490,8 @@ h1 span {
 		top: 135px;
 	}
 	.faq_items {
-		margin-top: -44px;
+		width: 88.2%;
+		margin-top: -60px;
 	}
 }
 @media (max-width: 1024px) {
@@ -3556,17 +3585,25 @@ h1 span {
 		margin-right: 4px;
 	}
 	.faq_items {
-		width: 94%;
+		width: 92%;
 		margin-top: -10px;
 		gap: 16px;
 	}
-	.faq_question p,
-	.faq_answer p {
+	.faq_question {
+		padding: 20px 32px;
+	}
+	.faq_item_active .faq_answer {
+		padding: 20px 32px;
+	}
+	.faq_question p {
 		font-size: 16px;
 		font-weight: 500;
-		line-height: 23.54px;
-		color: #222;
-		width: 86%;
+		line-height: 18.54px;
+	}
+	.faq_answer p {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 16.54px;
 	}
 }
 @media (max-width: 700px) {
@@ -3601,14 +3638,21 @@ h1 span {
 	.faq_btn {
 		top: 98px;
 	}
+	.faq_items {
+		width: 89.5%;
+	}
+	.faq_question {
+		height: 78px;
+		max-height: 78px;
+	}
+	.faq_item_active .faq_answer {
+		max-height: 64px;
+	}
 }
 @media (max-width: 390px) {
 	.image_anim {
 		width: 79.4%;
 		height: 250px;
-	}
-	.faq_items {
-		width: 90%;
 	}
 }
 
