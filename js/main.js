@@ -19,26 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
 	}, 400)
 
 	window.addEventListener('scroll', () => {
-		// -------- SCROLL-HEADER ------
+		// -------- SCROLL-HEADER -----
 
-		let possibleSection = document.querySelector('.header_possible')
-		let reviewsSection = document.querySelector('.reviews_header')
-		const header = document.querySelector('header')
-		const mobileHeader = document.querySelector('.hide_header')
 		function changeHeaderColor() {
-			const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-			const possibleSectionOffset = possibleSection.offsetTop
-			const reviewsSectionOffset = reviewsSection.offsetTop
+			const mainSection = document.querySelector('main')
+			const reviewsSection = document.querySelector('.reviews_header')
+			const header = document.querySelector('header')
+			let scrollTop = window.pageYOffset || document.documentElement.scrollTop
+			let mainSectionOffset = mainSection.clientHeight
+			let reviewsSectionOffset = reviewsSection.offsetTop
 
-			if (
-				scrollTop >= possibleSectionOffset &&
-				scrollTop <= possibleSectionOffset + (possibleSection.clientHeight - 20)
-			) {
-				header.classList.add('header_about')
-			} else {
+			if (scrollTop <= mainSectionOffset - 130) {
 				header.classList.remove('header_about')
+			} else {
+				header.classList.add('header_about')
 			}
-
 			if (
 				scrollTop >= reviewsSectionOffset &&
 				scrollTop <= reviewsSectionOffset + (reviewsSection.clientHeight - 60)
@@ -51,10 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		changeHeaderColor()
 
 		// ------ SERVICES-scroll-ANIM---
+
 		function servicesAnim() {
 			const scrollServices = document.querySelectorAll('.service_description')
 			const scrollImage = document.querySelectorAll('.service_image')
-			let windowCenter = window.scrollY + (window.innerHeight / 4) * 3.9
+			let windowCenter = window.scrollY + (window.innerHeight / 4) * 3.4
 			scrollServices.forEach((item, i) => {
 				let itemCenter = item.offsetTop + item.offsetHeight / 2 - 100
 				if (windowCenter >= itemCenter) {
@@ -105,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (reviewsTop < triggerBottom) {
 				setTimeout(() => {
 					reviewsFooter.classList.add('reviews_footer_active')
-				}, 2000)
+				}, 1500)
 			} else {
 				reviewsFooter.classList.remove('reviews_footer_active')
 			}
@@ -270,4 +266,26 @@ document.addEventListener('DOMContentLoaded', () => {
 			closeMobile()
 		})
 	})
+
+	// --------- SLIDER ----------
+
+	function initSlider() {
+		const slider = document.querySelector('.cards_wrap')
+		const slides = document.querySelectorAll('.main_card')
+		const container = document.querySelector('.card_block')
+
+		if (window.innerWidth < 769) {
+			slides.forEach(slide => {
+				const clone = slide.cloneNode(true)
+				slider.appendChild(clone)
+			})
+
+			slider.style.animation = 'scroll 8s linear infinite'
+		} else {
+			slider.style.animation = 'none'
+		}
+	}
+
+	window.addEventListener('load', initSlider)
+	window.addEventListener('resize', initSlider)
 })
