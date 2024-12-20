@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			const reviewsSection = document.querySelector('.reviews_header')
 			const header = document.querySelector('header')
 			let scrollTop = window.pageYOffset || document.documentElement.scrollTop
-			let mainSectionOffset = mainSection.clientHeight
+			let mainSectionOffset = mainSection.offsetTop
 			let reviewsSectionOffset = reviewsSection.offsetTop
 
-			if (scrollTop <= mainSectionOffset - 130) {
+			if (scrollTop <= mainSectionOffset + 60) {
 				header.classList.remove('header_about')
 			} else {
 				header.classList.add('header_about')
@@ -128,19 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		let tabsContent = document.querySelectorAll('.reviews_content')
 
-		// let labelTransform = document.querySelector('.label_anim')
-
-		// function labelAnim() {
-		// 	tabs.forEach(tab => {
-		// 		tab.addEventListener('click', e => {
-
-		// 			labelTransform.classList.remove('label_btn_active')
-		// 			// labelTransform.classList.add('label_btn_active')
-
-		// 		})
-		// 	})
-		// }
-
 		function hideTabContent() {
 			tabsContent.forEach(item => {
 				item.classList.add('hide')
@@ -166,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				tabs.forEach((item, i) => {
 					if (target === item) {
 						hideTabContent()
-						// labelAnim()
+
 						showTabContent(i)
 					}
 				})
@@ -288,4 +275,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	window.addEventListener('load', initSlider)
 	window.addEventListener('resize', initSlider)
+
+	// -------------- SWITCH-BUTTONS ---------
+
+	const revOn = document.querySelector('.rev_on')
+	const revOff = document.querySelector('.rev_off')
+	const revLabelAnim = document.querySelector('.label_rew_btn')
+
+	revOn.addEventListener('click', () => {
+		revLabelAnim.classList.add('label_btn_active')
+	})
+
+	revOff.addEventListener('click', () => {
+		revLabelAnim.classList.remove('label_btn_active')
+	})
+
+	const priceOn = document.querySelector('.price_on')
+	const priceOff = document.querySelector('.price_off')
+	const priceLabelAnim = document.querySelector('.label_price_btn')
+
+	priceOn.addEventListener('click', () => {
+		priceLabelAnim.classList.add('label_btn_active')
+	})
+
+	priceOff.addEventListener('click', () => {
+		priceLabelAnim.classList.remove('label_btn_active')
+	})
 })
