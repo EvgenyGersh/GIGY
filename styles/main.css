@@ -534,6 +534,14 @@ header {
 	background: #693bc4;
 }
 
+.header_reviews .top_buttons .primary:hover {
+	background: #7e40f6;
+}
+
+.header_reviews.top_buttons .primary:active {
+	background: #5f30ba;
+}
+
 .header_reviews .top_buttons .primary {
 	display: flex;
 }
@@ -2468,7 +2476,7 @@ h1 span {
 	transition: all 0.5s ease-in-out;
 }
 
-.tabs_switch .label:hover {
+.label_reviews:hover {
 	background: rgba(73, 16, 66, 0.2);
 }
 
@@ -3039,7 +3047,7 @@ h1 span {
 	background: #a269ff;
 }
 .label_btn_active.label_price_btn {
-	left: 50%;
+	left: 52%;
 }
 .price_switch .label_price {
 	background: transparent;
@@ -3049,13 +3057,14 @@ h1 span {
 	transition: all 0.5s ease-in-out;
 }
 
-.price_switch .label_price:hover {
+.label_price:hover {
 	background: rgba(162, 105, 255, 0.2);
 }
 
-.tabs_switch .label:hover {
+/* .tabs_switch .label:hover {
 	background: rgba(73, 16, 66, 0.2);
-}
+	
+} */
 
 .price_tabs {
 	width: 88%;

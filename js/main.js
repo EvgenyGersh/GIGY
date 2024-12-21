@@ -292,10 +292,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const priceOn = document.querySelector('.price_on')
 	const priceOff = document.querySelector('.price_off')
+	const labelHover = document.querySelector('.label_price')
 	const priceLabelAnim = document.querySelector('.label_price_btn')
 
 	priceOn.addEventListener('click', () => {
 		priceLabelAnim.classList.add('label_btn_active')
+		// labelHover.style.background = 'transparent'
 	})
 
 	priceOff.addEventListener('click', () => {
