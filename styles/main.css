@@ -94,11 +94,6 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	line-height: normal;
-
-	/* background: #fff url('../assets/image/Ellipse-bg.png');
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: center 8.4%; */
 	overflow-x: hidden;
 	margin: 0 auto;
 	-webkit-box-sizing: border-box;
@@ -538,8 +533,8 @@ header {
 	background: #7e40f6;
 }
 
-.header_reviews.top_buttons .primary:active {
-	background: #5f30ba;
+.header_reviews .top_buttons .primary:active {
+	background: rgba(95, 48, 186, 1);
 }
 
 .header_reviews .top_buttons .primary {
@@ -596,7 +591,6 @@ header {
 	}
 
 	.header_reviews {
-		/* width: 95.5%; */
 		width: 92%;
 		padding: 0;
 		background: transparent;
@@ -620,9 +614,7 @@ main {
 	padding-top: 143px;
 	text-align: center;
 	padding-bottom: 66px;
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* align-items: center; */
+
 	overflow: hidden;
 }
 
@@ -920,7 +912,7 @@ h1 span {
 		overflow-x: scroll;
 		scrollbar-width: none;
 		overflow: hidden;
-		width: 165%;
+		width: 132%;
 		&::-webkit-scrollbar {
 			display: none;
 		}
@@ -1062,14 +1054,7 @@ h1 span {
 	.card_right_secondary {
 		transform: translateX(0px);
 	}
-	@keyframes scroll {
-		from {
-			transform: translateX(0);
-		}
-		to {
-			transform: translateX(-100%);
-		}
-	}
+
 	.main_footer {
 		width: 88.4%;
 		margin-top: 48px;
@@ -1096,6 +1081,14 @@ h1 span {
 @media (max-width: 375px) {
 	.card_block {
 		width: 280.4%;
+	}
+}
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
 	}
 }
 
