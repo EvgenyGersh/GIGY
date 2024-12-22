@@ -302,4 +302,47 @@ document.addEventListener('DOMContentLoaded', () => {
 	priceOff.addEventListener('click', () => {
 		priceLabelAnim.classList.remove('label_btn_active')
 	})
+
+	// -----------------------------------------
+
+	// const slider = document.querySelector('.cards_wrap')
+	// let sliderWidth = slider.offsetWidth
+
+	// const updateSlider = () => {
+	// 	sliderWidth = slider.offsetWidth
+	// }
+
+	// const cloneSlides = () => {
+	// 	const slides = slider.querySelectorAll('.main_card')
+	// 	slides.forEach(slide => {
+	// 		const clone = slide.cloneNode(true)
+	// 		slider.appendChild(clone)
+	// 	})
+	// }
+
+	// cloneSlides()
+
+	// let offset = 0
+	// const moveSlider = () => {
+	// 	offset -= 1
+	// 	slider.style.transform = `translateX(${offset}px)`
+
+	// 	const slides = slider.querySelectorAll('.main_card')
+	// 	const firstSlide = slides[0]
+	// 	if (firstSlide.getBoundingClientRect().right <= 0) {
+	// 		slider.appendChild(firstSlide)
+	// 		slider.style.transition = 'none'
+	// 		offset += firstSlide.offsetWidth
+	// 		slider.style.transform = `translateX(${offset}px)`
+	// 		requestAnimationFrame(() => {
+	// 			slider.style.transition = ''
+	// 		})
+	// 	}
+	// 	requestAnimationFrame(moveSlider)
+	// }
+
+	// window.addEventListener('resize', updateSlider)
+	// moveSlider()
+	const wdt = document.querySelector('.width')
+	wdt.innerHTML = window.innerWidth
 })
