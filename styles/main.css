@@ -3954,8 +3954,7 @@ footer {
 
 .instagram_link {
 	width: 24px;
-
-	margin-left: 9px;
+	margin-left: 12px;
 }
 
 .instagram_link a {
@@ -4012,6 +4011,7 @@ footer {
 		margin-left: 0;
 		margin-top: 20px;
 		flex-direction: column;
+		align-items: center;
 	}
 	.web_links {
 		margin-top: 12px;

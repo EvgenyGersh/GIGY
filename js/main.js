@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				slider.appendChild(clone)
 			})
 
-			slider.style.animation = 'scroll 8s linear infinite'
+			slider.style.animation = 'scroll 10s linear infinite'
 		} else {
 			slider.style.animation = 'none'
 		}
@@ -297,7 +297,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	priceOn.addEventListener('click', () => {
 		priceLabelAnim.classList.add('label_btn_active')
-		// labelHover.style.background = 'transparent'
 	})
 
 	priceOff.addEventListener('click', () => {
