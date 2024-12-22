@@ -4050,36 +4050,8 @@ footer {
 }
 
 /* ------------------------------------------ */
-.slider-container {
-	display: flex;
-	overflow: hidden;
-	white-space: nowrap;
-	position: relative;
-	width: 100%;
-	height: 50px;
-	margin-bottom: 100px;
+.width {
+	font-size: 40px;
+	margin: 10px auto 100px;
+	color: #000;
 }
-
-.slide1,
-.slide2,
-.slide3 {
-	display: inline-block;
-	margin: 0;
-	transition: transform 0.3s;
-}
-
-.slide1 {
-	background: red;
-}
-.slide2 {
-	background: green;
-}
-.slide3 {
-	background: yellow;
-}
-
-/* .slide img {
-	display: block;
-	width: 100%;
-	height: auto;
-} */
