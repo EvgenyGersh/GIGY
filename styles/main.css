@@ -98,10 +98,15 @@ body {
 	margin: 0 auto;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+body {
+	overflow: auto;
 	scrollbar-width: none;
-	&::-webkit-scrollbar {
-		display: none;
-	}
+	-ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 .container {
@@ -3116,7 +3121,7 @@ h1 span {
 	width: 416px;
 	height: 361px;
 	border: 1.16px solid #fff;
-	border-radius: 37px;
+	border-radius: 38px;
 	width: 416px;
 	height: 361px;
 	background: #ef96e8;
@@ -3199,9 +3204,9 @@ h1 span {
 	border-radius: 16px;
 	border: 1px solid #9c5dfe;
 	background: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
-	line-height: 14px;
+	line-height: 16px;
 	color: #9c5dfe;
 	margin-top: auto;
 	cursor: pointer;

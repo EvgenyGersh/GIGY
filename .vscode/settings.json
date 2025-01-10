@@ -1,3 +1,19 @@
 {
-	"liveServer.settings.port": 5501
+	"editor.hover.sticky": false,
+	"editor.inlineSuggest.showToolbar": "never",
+	"workbench.tree.renderIndentGuides": "none",
+	"notebook.cellToolbarVisibility": "hover",
+	"css.hover.references": false,
+	"css.hover.documentation": false,
+	"less.hover.documentation": false,
+	"less.hover.references": false,
+	"scss.hover.references": false,
+	"scss.hover.documentation": false,
+	"gitlens.hovers.avatars": false,
+	"gitlens.hovers.pullRequests.enabled": false,
+	"gitlens.hovers.currentLine.enabled": false,
+	"gitlens.hovers.currentLine.over": "line",
+	"html.hover.references": false,
+	"html.hover.documentation": false,
+	"tailwindCSS.hovers": false
 }

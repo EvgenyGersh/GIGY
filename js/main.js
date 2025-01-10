@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const priceOn = document.querySelector('.price_on')
 	const priceOff = document.querySelector('.price_off')
-	const labelHover = document.querySelector('.label_price')
+	const priceHover = document.querySelector('.label_price')
 	const priceLabelAnim = document.querySelector('.label_price_btn')
 
 	priceOn.addEventListener('click', () => {
@@ -302,58 +302,4 @@ document.addEventListener('DOMContentLoaded', () => {
 	priceOff.addEventListener('click', () => {
 		priceLabelAnim.classList.remove('label_btn_active')
 	})
-
-	// -------------------- slider var-2 ---
-
-	// const slider = document.querySelector('.cards_wrap')
-	// const slides = Array.from(document.querySelectorAll('.main_card'))
-
-	// let currentIndex = 0
-
-	// function duplicateSlides() {
-	// 	const firstSlides = slides.slice(0, 3)
-	// 	const lastSlides = slides.slice(-5)
-
-	// 	firstSlides.forEach(slide => slider.appendChild(slide.cloneNode(true)))
-	// 	lastSlides.forEach(slide =>
-	// 		slider.insertBefore(slide.cloneNode(true), slides[0])
-	// 	)
-	// }
-
-	// function updateSlider() {
-	// 	const slideWidth = document.querySelector('.main_card').offsetWidth + 16
-	// 	slider.style.transform = `translateX(${-slideWidth * currentIndex}px)`
-	// }
-
-	// function nextSlide() {
-	// 	const totalSlides = slider.children.length
-	// 	const slideWidth = document.querySelector('.main_card').offsetWidth + 16
-
-	// 	currentIndex++
-	// 	slider.style.transition = 'transform 0.5s ease-in-out'
-	// 	slider.style.transform = `translateX(${-slideWidth * currentIndex}px)`
-
-	// 	setTimeout(() => {
-	// 		if (currentIndex >= totalSlides / 3) {
-	// 			slider.style.transition = 'none'
-	// 			currentIndex = 0
-	// 			slider.style.transform = `translateX(${-slideWidth * currentIndex}px)`
-	// 		}
-	// 	}, 700)
-	// }
-
-	// function startSlider() {
-	// 	duplicateSlides()
-	// 	updateSlider()
-	// 	setInterval(nextSlide, 1500)
-	// }
-
-	// window.addEventListener('resize', updateSlider)
-
-	// startSlider()
-
-	// )
-	// --------
-	// для этого варианта в main.css убираю строки (
-	// 	915, 1021, c 1064 -1088 ) и нет отключения слайдера >768px
 })
